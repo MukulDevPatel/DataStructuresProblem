@@ -11,7 +11,7 @@ namespace DataStructureProblem
             while (flag)
             {
                 Console.WriteLine("Enter the number for execution");
-                Console.WriteLine("\n1. Binary Search\n2. BubbleSort\n3. Aanagram\n4. Exit");
+                Console.WriteLine("\n1. Binary Search\n2. BubbleSort\n3. Aanagram\n4. Customize String\n5. Exit");
                 int select = Convert.ToInt32(Console.ReadLine());
                 switch (select)
                 {
@@ -28,6 +28,10 @@ namespace DataStructureProblem
                         anagram.CheckAnagram();
                         break;
                     case 4:
+                        CustomizeString customize = new CustomizeString();
+                        customize.Customize();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
