@@ -11,7 +11,7 @@ namespace DataStructureProblem
             while (flag)
             {
                 Console.WriteLine("Enter the number for execution");
-                Console.WriteLine("\n1. Binary Search\n2. BubbleSort\n3. Aanagram\n4. Customize String\n5. Exit");
+                Console.WriteLine("\n1. Binary Search\n2. BubbleSort\n3. Aanagram\n4. Customize String\n5. Insertion sort\n6. Exit");
                 int select = Convert.ToInt32(Console.ReadLine());
                 switch (select)
                 {
@@ -32,6 +32,10 @@ namespace DataStructureProblem
                         customize.Customize();
                         break;
                     case 5:
+                        Insertion insertion = new Insertion();
+                        insertion.Main();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
